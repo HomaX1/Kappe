@@ -2,3 +2,6 @@
 .sass-cache/
 .idea/fileTemplates/
 .idea/vcs.xml
+css/main.css.map
+scss/main.css.map
+scss/main.css
