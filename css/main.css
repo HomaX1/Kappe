@@ -11,10 +11,11 @@ body {
 
 .left-section {
   width: 300px;
-  height: 100%;
+  min-height: 100%;
   position: absolute;
   top: 0;
-  left: 0; }
+  left: 0;
+  box-shadow: 3px 0 20px 8px rgba(0, 0, 0, 0.65); }
 
 .header {
   background-color: #ffffff; }
@@ -90,14 +91,52 @@ body {
   color: #6b7072;
   margin-right: 24px; }
 
-.shadow {
-  position: relative;
-  box-shadow: 0px 0px 10px;
+.right-section {
+  background-color: #ffffff;
+  min-height: 100%;
   margin-left: 300px; }
 
-.right-section {
+.right-section__link {
+  position: relative;
+  cursor: pointer;
+  width: 25%;
+  height: 25%;
+  display: block;
+  float: left; }
+  .right-section__link:hover .hover-text {
+    opacity: 1; }
+.right-section__image {
+  width: 100%;
   height: 100%;
-  background-color: #ffffff;
-  margin-left: 326px; }
+  display: block; }
+
+.clear {
+  clear: both; }
+
+.hover-text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  text-align: center;
+  background-color: #24b0ae;
+  display: flex;
+  opacity: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out; }
+  .hover-text__title {
+    color: #ffffff;
+    font: 24px Roboto Light; }
+  .hover-text__description {
+    color: #ffffff;
+    font: 12px Roboto Light;
+    padding-bottom: 18px;
+    border-bottom: 1px solid #ffffff;
+    display: inline-block; }
+  .hover-text__image {
+    display: block;
+    margin: auto;
+    margin-top: 15px; }
 
 /*# sourceMappingURL=main.css.map */
