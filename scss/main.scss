@@ -7,6 +7,7 @@ $border-top: #202426;
 $border-bottom: #1e282b;
 $font-navigation: Roboto Light;
 $font-copyright: Roboto Thin;
+$black: #000000;
 
 
 
@@ -34,15 +35,17 @@ body {
 }
 
 .header {
+  background-color: $header;
+
   &__logo{
     width: 117px;
     height: 61px;
     margin: 32px 91px 32px 91px;
   }
-  background-color: $header;
 }
 
 .navigation {
+
   &__link {
     display:block;
     text-decoration: none;
@@ -61,78 +64,87 @@ body {
     background-color: $navigation-link-active;
   }
 }
+.footer {
+  .works {
+    border-top: 1px solid $border-top;
+    border-bottom: 1px solid $border-bottom;
+    margin-right: 24px;
+    text-align: right;
 
-.works {
-  &__filter {
-    width: 71px;
-    height: 20px;
-    margin-top: 21px;
-    margin-bottom: 21px;
+    &__filter {
+      width: 71px;
+      height: 20px;
+      margin-top: 21px;
+      margin-bottom: 21px;
+    }
+
+    &__name-works {
+      font: 13px $font-navigation;
+      color: $header;
+    }
   }
 
-  &__name-works {
-    font: 13px $font-navigation;
-    color: $header;
+  .list {
+
+    &__item {
+      list-style-type: none;
+      font: 13px $font-navigation;
+      color: $list-item;
+      margin-top: 13px;
+    }
+
+    &__item_margin {
+      margin-bottom: 29px;
+    }
   }
 
-  border-top: 1px solid $border-top;
-  border-bottom: 1px solid $border-bottom;
-  margin-right: 24px;
-  text-align: right;
-}
-
-.list {
-  &__item {
-    list-style-type: none;
-    font: 13px $font-navigation;
-    color: $list-item;
-    margin-top: 13px;
-  }
-  &__item_margin {
-    margin-bottom: 29px;
-  }
-}
-
-.icons {
-  &__link {
-    width: 24px;
+  .icons {
     height: 24px;
-    display: inline-block;
-    margin-left: 10px;
-    &_flickr {
-      background: url("../img/sprite.png") 0 0 no-repeat;
-    }
-    &_google-plus {
-      background: url("../img/sprite.png") 0 -36px no-repeat;
-    }
-    &_twitter {
-      background: url("../img/sprite.png") 0 -216px no-repeat;
-    }
-    &_pinterest {
-      background: url("../img/sprite.png") 0 -180px no-repeat;
-    }
-    &_dribbble {
-      background: url("../img/sprite.png") 0 -108px no-repeat;
-    }
-    &_behance {
-      background: url("../img/sprite.png") 0 -72px no-repeat;
-    }
-    &_facebook {
-      background: url("../img/sprite.png") 0 -144px no-repeat;
+    width: 262px;
+    margin: 27px 0 23px 13px;
+
+    &__link {
+      width: 24px;
+      height: 24px;
+      display: inline-block;
+      margin-left: 10px;
+
+      &_flickr {
+        background: url("../img/sprite.png") 0 0 no-repeat;
+      }
+
+      &_google-plus {
+        background: url("../img/sprite.png") 0 -36px no-repeat;
+      }
+
+      &_twitter {
+        background: url("../img/sprite.png") 0 -216px no-repeat;
+      }
+
+      &_pinterest {
+        background: url("../img/sprite.png") 0 -180px no-repeat;
+      }
+
+      &_dribbble {
+        background: url("../img/sprite.png") 0 -108px no-repeat;
+      }
+
+      &_behance {
+        background: url("../img/sprite.png") 0 -72px no-repeat;
+      }
+
+      &_facebook {
+        background: url("../img/sprite.png") 0 -144px no-repeat;
+      }
     }
   }
 
-
-  height: 24px;
-  width: 262px;
-  margin: 27px 0 23px 13px;
-}
-
-.footer__name-copyright {
-  text-align: right;
-  font: 12px $font-copyright;
-  color: $list-item;
-  margin-right: 24px;
+  .footer__name-copyright {
+    text-align: right;
+    font: 12px $font-copyright;
+    color: $list-item;
+    margin-right: 24px;
+  }
 }
 
 .right-section {
@@ -143,6 +155,7 @@ body {
 
 
 .right-section {
+
   &__link {
     position: relative;
     cursor: pointer;
@@ -197,5 +210,47 @@ body {
     display: block;
     margin: auto;
     margin-top: 15px;
+  }
+}
+
+.fix {
+  &__attention {
+    width: 91px;
+    height: 91px;
+    background: url("../img/sprite2.png") 15px 15px no-repeat $navigation-link-active;
+    position: fixed;
+    top: 0;
+    right: 0;
+  }
+
+  .contacts {
+    list-style-type: none;
+    width: 284px;
+    height: 130px;
+    background-color: $black;
+    opacity: 0.8;
+    position: fixed;
+    top: 91px;
+    right: 0;
+
+    &__list {
+      font: 16px $font-copyright;
+      color: $header;
+      margin-top: 17px;
+      padding-left: 55px;
+
+      &_phone {
+        background: url("../img/sprite2.png") 0 -157px no-repeat;
+      }
+
+      &_email {
+        background: url("../img/sprite2.png") 0 -113px no-repeat;
+      }
+
+      &_address {
+        background: url("../img/sprite2.png") 0 -75px no-repeat;
+      }
+    }
+
   }
 }

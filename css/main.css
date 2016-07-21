@@ -39,53 +39,50 @@ body {
 .navigation__link_active {
   background-color: #24b0ae; }
 
-.works {
+.footer .works {
   border-top: 1px solid #202426;
   border-bottom: 1px solid #1e282b;
   margin-right: 24px;
   text-align: right; }
-  .works__filter {
+  .footer .works__filter {
     width: 71px;
     height: 20px;
     margin-top: 21px;
     margin-bottom: 21px; }
-  .works__name-works {
+  .footer .works__name-works {
     font: 13px Roboto Light;
     color: #ffffff; }
-
-.list__item {
+.footer .list__item {
   list-style-type: none;
   font: 13px Roboto Light;
   color: #6b7072;
   margin-top: 13px; }
-.list__item_margin {
+.footer .list__item_margin {
   margin-bottom: 29px; }
-
-.icons {
+.footer .icons {
   height: 24px;
   width: 262px;
   margin: 27px 0 23px 13px; }
-  .icons__link {
+  .footer .icons__link {
     width: 24px;
     height: 24px;
     display: inline-block;
     margin-left: 10px; }
-    .icons__link_flickr {
+    .footer .icons__link_flickr {
       background: url("../img/sprite.png") 0 0 no-repeat; }
-    .icons__link_google-plus {
+    .footer .icons__link_google-plus {
       background: url("../img/sprite.png") 0 -36px no-repeat; }
-    .icons__link_twitter {
+    .footer .icons__link_twitter {
       background: url("../img/sprite.png") 0 -216px no-repeat; }
-    .icons__link_pinterest {
+    .footer .icons__link_pinterest {
       background: url("../img/sprite.png") 0 -180px no-repeat; }
-    .icons__link_dribbble {
+    .footer .icons__link_dribbble {
       background: url("../img/sprite.png") 0 -108px no-repeat; }
-    .icons__link_behance {
+    .footer .icons__link_behance {
       background: url("../img/sprite.png") 0 -72px no-repeat; }
-    .icons__link_facebook {
+    .footer .icons__link_facebook {
       background: url("../img/sprite.png") 0 -144px no-repeat; }
-
-.footer__name-copyright {
+.footer .footer__name-copyright {
   text-align: right;
   font: 12px Roboto Thin;
   color: #6b7072;
@@ -138,5 +135,33 @@ body {
     display: block;
     margin: auto;
     margin-top: 15px; }
+
+.fix__attention {
+  width: 91px;
+  height: 91px;
+  background: url("../img/sprite2.png") 15px 15px no-repeat #24b0ae;
+  position: fixed;
+  top: 0;
+  right: 0; }
+.fix .contacts {
+  list-style-type: none;
+  width: 284px;
+  height: 130px;
+  background-color: #000000;
+  opacity: 0.8;
+  position: fixed;
+  top: 91px;
+  right: 0; }
+  .fix .contacts__list {
+    font: 16px Roboto Thin;
+    color: #ffffff;
+    margin-top: 17px;
+    padding-left: 55px; }
+    .fix .contacts__list_phone {
+      background: url("../img/sprite2.png") 0 -157px no-repeat; }
+    .fix .contacts__list_email {
+      background: url("../img/sprite2.png") 0 -113px no-repeat; }
+    .fix .contacts__list_address {
+      background: url("../img/sprite2.png") 0 -75px no-repeat; }
 
 /*# sourceMappingURL=main.css.map */
